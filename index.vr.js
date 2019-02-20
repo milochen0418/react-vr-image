@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import {Linking} from 'react-native'
 import {AppRegistry, asset, Pano, Text, Image, View, Sound} from 'react-vr';
 const VrButton = require('VrButton');
 
@@ -16,6 +17,8 @@ class Button extends React.Component {
       <VrButton
         onClick={() => {
           this.setState({open: !this.state.open});
+	  let url = 'http://www.google.com';
+	  Linking.openURL(url);
         }}
       >
         <Image
