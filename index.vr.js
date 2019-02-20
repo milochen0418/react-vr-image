@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import {AppRegistry, asset, Pano, Text, Image, View} from 'react-vr';
+import {AppRegistry, asset, Pano, Text, Image, View, Sound} from 'react-vr';
 const VrButton = require('VrButton');
 
 import CylindricalPanel from 'CylindricalPanel';
@@ -38,6 +38,9 @@ class CylindricalPanelDemo extends React.Component {
     return (
       <View>
         <Pano source={asset('chess-world.jpg')} />
+	<Sound source={asset('yese.mp3')} loop={true} volume={1}
+	/>
+    
         <CylindricalPanel layer={{width: 2000, height: 720}} style={{position: 'absolute'}}>
           <View
             style={{
@@ -57,7 +60,7 @@ class CylindricalPanelDemo extends React.Component {
                 backgroundColor: 'grey',
               }}
             >
-              VR Beauty
+              VR Beauty 
             </Text>
 
             <Image
