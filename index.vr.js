@@ -17,7 +17,7 @@ class Button extends React.Component {
       <VrButton
         onClick={() => {
           this.setState({open: !this.state.open});
-	  let url = 'http://www.google.com';
+	  let url = 'http://ubuntu1804.twdapp.org:8081/vr/';
 	  Linking.openURL(url);
         }}
       >
