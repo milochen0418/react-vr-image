@@ -57,14 +57,14 @@ class CylindricalPanelDemo extends React.Component {
                 backgroundColor: 'grey',
               }}
             >
-              Hello
+              VR Beauty
             </Text>
 
             <Image
               style={{
-                borderRadius: 20,
+                borderRadius: 2,
                 backgroundColor: 'red',
-                borderWidth: 10,
+                borderWidth: 2,
                 width: 600,
                 height: 315,
               }}
